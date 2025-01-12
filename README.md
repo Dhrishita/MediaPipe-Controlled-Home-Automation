@@ -208,4 +208,14 @@ The system provides **real-time feedback** on the status of the appliances:
     pip install mediapipe
     pip install cvzone
 
-
+## Usage
+1. Clone this repository to your Raspberry Pi:
+   
+   ```bash
+   git clone https://github.com/Dhrishita/mediapipe-controlled-home-automation.git
+   cd mediapipe-controlled-home-automation
+   
+2. Run the Python script:
+   
+   ```bash
+   python3 main.py
