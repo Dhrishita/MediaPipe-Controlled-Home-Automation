@@ -21,9 +21,11 @@ This project demonstrates a home automation system controlled by hand gestures u
 Hand gesture recognition provides an intuitive way to control home appliances. This project leverages computer vision with OpenCV and Mediapipe libraries for gesture detection, and a Raspberry Pi with relays to switch appliances on or off based on detected gestures.
 
 ## Media Pipe
-<div align="center">
-  <img alt="mediapipeLogo" src="images/mediapipe.png" />
-</div>
+
+![mediapipe](https://github.com/user-attachments/assets/ca254866-5cd2-41c5-b8ab-22d0728cb9a1)
+
+
+> MediaPipe offers open source cross-platform, customizable ML solutions for live and streaming media.
 
 ### What is Media Pipe?
 
@@ -54,13 +56,7 @@ These tools let you customize and evaluate solutions:
     browser. [Learn
     more](https://developers.google.com/mediapipe/solutions/studio).
 
-> MediaPipe offers open source cross-platform, customizable ML solutions for live and streaming media.
-
-<div align="center">
-    <img alt="mediapipeLogo" src="images/hand_landmarks_docs.png" height="200 x    " />
-    <img alt="mediapipeLogo" src="images/htm.jpg" height="360 x" weight ="640 x" />
-    
-</div>
+![hand_landmarks_docs](https://github.com/user-attachments/assets/737ffbe4-93e7-4fe0-bc9e-a0dcae51d05d)
 
 ## Framework
 
