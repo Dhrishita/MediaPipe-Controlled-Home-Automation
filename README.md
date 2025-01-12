@@ -5,6 +5,8 @@ This project demonstrates a home automation system controlled by hand gestures u
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Media Pipe](#media-pipe)
+- [Framework](#framework)
 - [Features](#features)
 - [Components Required](#components-required)
 - [Circuit Diagram](#circuit-diagram)
@@ -17,6 +19,66 @@ This project demonstrates a home automation system controlled by hand gestures u
 ## Introduction
 
 Hand gesture recognition provides an intuitive way to control home appliances. This project leverages computer vision with OpenCV and Mediapipe libraries for gesture detection, and a Raspberry Pi with relays to switch appliances on or off based on detected gestures.
+
+## Media Pipe
+<div align="center">
+  <img alt="mediapipeLogo" src="images/mediapipe.png" />
+</div>
+
+### What is Media Pipe?
+
+MediaPipe is an open-source framework from Google that allows developers to build machine learning (ML) and artificial intelligence (AI) pipelines for cross-platform applications.
+
+MediaPipe Solutions provides a suite of libraries and tools for us to quickly
+apply artificial intelligence (AI) and machine learning (ML) techniques in our
+applications. We can plug these solutions into our applications immediately,
+customize them to our needs, and use them across multiple development
+platforms. MediaPipe Solutions is part of the MediaPipe [open source
+project](https://github.com/google/mediapipe), so you can further customize the
+solutions code to meet your application needs.
+
+These libraries and resources provide the core functionality for each MediaPipe
+Solution:
+
+*   **MediaPipe Tasks**: Cross-platform APIs and libraries for deploying
+    solutions. [Learn
+    more](https://developers.google.com/mediapipe/solutions/tasks).
+*   **MediaPipe models**: Pre-trained, ready-to-run models for use with each
+    solution.
+
+These tools let you customize and evaluate solutions:
+
+*   **MediaPipe Model Maker**: Customize models for solutions with your data.
+    [Learn more](https://developers.google.com/mediapipe/solutions/model_maker).
+*   **MediaPipe Studio**: Visualize, evaluate, and benchmark solutions in your
+    browser. [Learn
+    more](https://developers.google.com/mediapipe/solutions/studio).
+
+> MediaPipe offers open source cross-platform, customizable ML solutions for live and streaming media.
+
+<div align="center">
+    <img alt="mediapipeLogo" src="images/hand_landmarks_docs.png" height="200 x    " />
+    <img alt="mediapipeLogo" src="images/htm.jpg" height="360 x" weight ="640 x" />
+    
+</div>
+
+## Framework
+
+To start using MediaPipe Framework, [install MediaPipe
+Framework](https://developers.google.com/mediapipe/framework/getting_started/install)
+and start building example applications in C++, Android, and iOS.
+
+[MediaPipe Framework](https://developers.google.com/mediapipe/framework) is the
+low-level component used to build efficient on-device machine learning
+pipelines, similar to the premade MediaPipe Solutions.
+
+Before using MediaPipe Framework, familiarize yourself with the following key
+[Framework
+concepts](https://developers.google.com/mediapipe/framework/framework_concepts/overview.md):
+
+*   [Packets](https://developers.google.com/mediapipe/framework/framework_concepts/packets.md)
+*   [Graphs](https://developers.google.com/mediapipe/framework/framework_concepts/graphs.md)
+*   [Calculators](https://developers.google.com/mediapipe/framework/framework_concepts/calculators.md)
 
 ## Features
 
