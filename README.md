@@ -100,12 +100,18 @@ Hand gesture recognition provides an intuitive way to control home appliances. T
    - Pinky Finger: Toggles the buzzer.
 3. **Appliance Control**: The relays act as switches to control the appliances.
 
-
 ## Installation
+## Hardware Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Dhrishita/MediaPipeControlledHomeAutomation.git
-   cd MediaPipeControlledHomeAutomation
+1. Connect the camera module to the Raspberry Pi.
+2. Connect the LED indicator to the GPIO pins on the Raspberry Pi.
+   
+    ```bash
+    sudo apt-get update
+    sudo apt-get upgrade
+    pip install pip==22.3.1 --break-system-packages
+    pip install opencv-python
+    pip install mediapipe
+    pip install cvzone
 
 
