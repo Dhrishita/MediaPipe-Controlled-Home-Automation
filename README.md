@@ -219,3 +219,7 @@ The system provides **real-time feedback** on the status of the appliances:
    
    ```bash
    python3 main.py
+
+## Contact
+If you have any questions or suggestions, feel free to open an issue or contact:
+Dhrishita Parve: dhrishitap18@gmail.com
