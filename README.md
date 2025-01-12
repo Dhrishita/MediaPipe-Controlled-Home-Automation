@@ -198,7 +198,7 @@ The system provides **real-time feedback** on the status of the appliances:
 ## Hardware Setup
 
 1. Connect the camera module to the Raspberry Pi.
-2. Connect the LED indicator to the GPIO pins on the Raspberry Pi.
+2. Connect the Relay Input to the GPIO pins on the Raspberry Pi.
    
     ```bash
     sudo apt-get update
