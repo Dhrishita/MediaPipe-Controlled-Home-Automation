@@ -151,12 +151,48 @@ concepts](https://developers.google.com/mediapipe/framework/framework_concepts/o
 
 ## Working of the Project
 
-1. **Gesture Detection**: The external webcam captures hand movements and detects gestures using the Mediapipe library.
-2. **Command Interpretation**: Based on the number of fingers detected, the system sends commands to specific relays.
-   - Index Finger: Toggles the bulb.
-   - Middle Finger: Toggles the fan.
-   - Pinky Finger: Toggles the buzzer.
-3. **Appliance Control**: The relays act as switches to control the appliances.
+Below is a detailed breakdown of how the system operates:
+
+### 1. **Gesture Detection**:
+- An **external webcam** captures the hand movements of the user.
+- The captured video frames are processed using the **Mediapipe** library, which performs **hand landmark detection** to identify the position of each finger.
+- Based on the positions of the fingers, the number of visible fingers is calculated, and gestures are detected.
+
+### 2. **Gesture Recognition**:
+The system recognizes the following gestures to control the appliances:
+- **One Finger (Index Finger Raised)**: Turns the **bulb** on or off.
+- **Two Fingers (Index and Middle Fingers Raised)**: Turns the **fan** on or off.
+- **Three Fingers (Index, Middle, and Ring Fingers Raised)**: Turns the **buzzer** on or off.
+
+When the system detects a specific gesture, it interprets the gesture and sends a corresponding signal to the **Raspberry Pi's GPIO pins**.
+
+### 3. **Command Interpretation**:
+The hand gestures are mapped to specific GPIO pins connected to the relay module:
+- **Index Finger** → Turns the bulb on/off by activating **Relay 1** (connected to GPIO 3).
+- **Middle Finger** → Turns the fan on/off by activating **Relay 2** (connected to GPIO 5).
+- **Pinky Finger** → Turns the buzzer on/off by activating **Relay 3** (connected to GPIO 8).
+
+The system processes the detected gesture and interprets it as a command to control the corresponding appliance.
+
+### 4. **Appliance Control**:
+The **Raspberry Pi** sends signals to the **relay module** based on the recognized gesture:
+- The relay's **input pins** (IN1, IN2, IN3) are connected to the Raspberry Pi GPIO pins (GPIO 3, GPIO 5, GPIO 8).
+- When a gesture is recognized, the Raspberry Pi triggers the appropriate relay by providing a HIGH signal to its input pin, causing the relay to switch its corresponding output.
+
+For example:
+- **Relay 1** controls the **bulb**:
+  - When the system detects the index finger, it sends a signal to Relay 1 to turn the bulb on or off by connecting the **NO (Normally Open)** pin of the relay to the bulb's power input.
+
+### 5. **Real-Time Feedback**:
+The system provides **real-time feedback** on the status of the appliances:
+- When the appliances are turned on or off, the user can immediately see the result of their gesture.
+
+### 6. **User Interaction**:
+- The system waits for hand gestures and provides feedback after each gesture is processed.
+- Users can repeat the gestures as needed to control different appliances.
+
+### 7. **Exit the Program**:
+- The program continues running until the user presses `q` to exit, which stops the webcam feed and releases the GPIO pins.
 
 ## Installation
 ## Hardware Setup
